@@ -5,8 +5,14 @@ const MembersBL = require('../bl/membersbl');
 
 router.route('/').get(async function(req,resp)
 {
+   try{
    let members = await MembersBL.getAllMembers()
    return resp.json(members)
+   }
+   catch
+   {
+      console.log("error")
+   }
 })
 
 router.route('/:id').get(async function(req,resp)
