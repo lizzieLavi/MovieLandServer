@@ -21,7 +21,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-//ExternalMoviesWS.getMoviesFromExternalWS();
+ExternalMoviesWS.getMoviesFromExternalWS();
+ExternalMembersWS.getMembersFromExternalWS();
 
 app.use('/api/members',MembersRouter)
 app.use('/movies',moviesRouter)
