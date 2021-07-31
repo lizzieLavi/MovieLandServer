@@ -104,6 +104,9 @@ const DeleteMovie = function(id)
 const UpdateMovie = function(id,movie)
 {
 
+    console.log(id)
+    console.log(movie)
+
     return new Promise((resolve,reject) =>
     {
       
